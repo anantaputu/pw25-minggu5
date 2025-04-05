@@ -2,6 +2,8 @@
 ### Nama: I Putu Ananta Sugiartha
 ### NIM : F1D02310113
 ### Link Website: [dhoughton](https://dhoughton-ff32f.web.app)
+### username    : admin
+### password    : !4dmin123
 
 ## Deskripsi
 #### Tugas ini dibuat menggunakan:
