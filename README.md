@@ -1,7 +1,7 @@
 # Tugas Pemrograman Web Minggu Ke-5
 ### Nama: I Putu Ananta Sugiartha
 ### NIM : F1D02310113
-### Link Website: [text](https://dhoughton-ff32f.web.app)
+### Link Website: [dhoughton](https://dhoughton-ff32f.web.app)
 
 ## Deskripsi
 #### Tugas ini dibuat menggunakan:
