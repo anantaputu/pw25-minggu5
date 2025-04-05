@@ -1,0 +1,18 @@
+@import url('mainstyle.css');
+
+.scroll-container {
+  background-color: #000000;
+}
+
+.scroll-container img {
+  width: var(--lebar-layar);
+  border-radius: 24px;
+}
+
+.content {
+  padding-top: 50px;
+}
+
+.content h1 {
+  text-align: center;
+}

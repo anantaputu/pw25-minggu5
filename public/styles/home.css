@@ -1,0 +1,460 @@
+@import url('mainstyle.css');
+
+/* Hero Section */
+
+main {
+	display: block;
+}
+
+main .grid1 {
+	width: 100%;
+}
+
+main .grid1 h1 {
+  	font-family: "Prata", serif;
+  	font-weight: 10;
+  	font-size: 4.5rem;
+}
+
+main .grid1 .up {
+	padding-top: 200px;
+	margin-left: 300px;
+}
+
+main .grid1 .mid {
+	margin-left: 500px;
+}
+
+main .grid1 .bott {
+	margin-left: 400px;
+}
+
+main .grid2 {
+	width: 20%;
+	text-align: justify;
+	margin-top: 25px;
+	margin-left: 700px;
+}
+
+main .grid2 p {
+	margin-bottom: 10px;
+}
+
+main .grid2 a {
+	font-weight: 500;
+	padding: 5px 20px;
+	background-color: white;
+	color: black;
+	border-radius: 50px;
+	text-align: center;	
+	transition: all 0.5s ease;
+}
+
+main .grid2 a:hover {
+	background-color: black;
+	color: white;
+	border: 1px solid #ffffff;
+}
+
+/* End Hero Section */
+
+section {
+	padding: 0 3rem 0 3rem;
+}
+
+/* About Us Section */
+
+#aboutus {
+	padding-top: 15rem;
+	padding-bottom: 15rem;
+}
+
+section h1 {
+	font-size: 2rem;
+}
+
+section .aboutus {
+	display: flex;
+	margin-top: 20px;
+	align-items: space-between;
+}
+
+section .aboutus .about {
+	width: 70%;
+	margin-right: 5px;
+}
+
+section .aboutus .about .mainparaf {
+	text-align: justify;
+}
+
+section .aboutus .about .medsos {
+	display: flex;
+	align-items: center;
+}
+
+section .aboutus .images {
+	position: relative;
+	width: 100%;
+}
+
+section .aboutus .images img {
+	position: absolute;
+	width: 750px;
+	z-index: 1;
+	top: -100px;
+}
+
+/* End About Us Section */
+
+#timetable {
+	padding-top: 10rem;
+	padding-bottom: 15rem;
+	width: 100vw;
+}
+
+.timetable table {
+	width: 100%;
+}
+
+.timetable th {
+	width: 100px;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+td {
+	text-align: center;
+}
+
+/* Contact Section */
+
+#contact {
+	padding-top: 10rem;
+	padding-bottom: 14rem;
+}
+
+section .contact {
+	display: flex;
+}
+
+.contact-info {
+	width: 100%;
+}
+
+.contact-info img {
+	position: absolute;
+	width: 1000px;
+	z-index: 1;
+	left: -10px;
+}
+
+.container {
+  width: 60%;
+  border-radius: 12px;
+  background-color: #000000;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ffffff;
+}
+
+input[type=text], select, textarea, option {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  color: black;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 30px;
+  border: 1px solid white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Footer Section */
+footer {
+	font-size: 0.7rem;
+	width: calc(100% - 50px);
+	color: grey;
+	padding-top: 1.5rem;
+	padding-left: 3rem;
+}
+
+/* Media Query 360px */
+@media screen and (max-width: 360px) {
+	main .grid1 h1 {
+		font-weight: 10;
+		font-size: 2.25rem;
+	}
+
+	main .grid1 .up {
+		padding-top: 90px;
+		margin-left: 25px;
+	}
+
+	main .grid1 .mid {
+		margin-left: 25px;
+	}
+
+	main .grid1 .bott {
+		margin-left: 25px;
+	}
+
+	main .grid2 {
+		width: 80%;
+		margin-top: 15px;
+		margin-left: 25px;
+	}
+
+	#aboutus {
+		padding-top: 8rem;
+		padding-bottom: 10rem;
+	}
+
+	section {
+		padding: 0 25px 0 25px;
+	}
+
+	section .aboutus {
+		display: block;
+		margin-top: 10px;
+	}
+
+	section .aboutus .about {
+		width: calc(100% - 1rem);
+	}
+
+	section .aboutus .images {
+		width: calc(100% - 1rem);
+	}
+
+	section .aboutus .images img {
+		width: 300px;
+		top: 0;
+	}
+
+	#timetable {
+		padding-bottom: 5rem;
+	}
+
+	.timetable {
+		font-size: 6px;
+	}
+
+	.contact-info {
+		display: none;
+	}
+
+	.container {
+  	width: calc(100% - 1rem);
+	}
+
+	input[type=text], select, textarea, option {
+	  	margin-bottom: 5px;
+	}
+
+	#contact {
+		padding-bottom: 5rem;
+	}
+
+	footer {
+		margin-left: 25px;
+		margin-bottom: 25px;
+		padding: 0;	
+	}
+}
+
+/* Media Query Max 767px and Min 361px */
+@media screen and (min-width: 361px) and (max-width: 767px) {
+	main .grid1 h1 {
+  	font-weight: 10;
+  	font-size: 3rem;
+	}
+
+	main .grid1 .up {
+		padding-top: 150px;
+		margin-left: 25px;
+	}
+
+	main .grid1 .mid {
+		margin-left: 25px;
+	}
+
+	main .grid1 .bott {
+		margin-left: 25px;
+	}
+
+	main .grid2 {
+		width: 60%;
+		margin-top: 15px;
+		margin-left: 25px;
+	}
+
+	#aboutus {
+		padding-top: 5rem;
+		padding-bottom: 8rem;
+	}
+
+	section {
+		padding: 0 25px 0 25px;
+	}
+
+	section .aboutus {
+		display: block;
+		margin-top: 10px;
+	}
+
+	section .aboutus .about {
+		width: calc(100% - 1rem);
+	}
+
+	section .aboutus .images {
+		width: calc(100% - 1rem);
+	}
+
+	section .aboutus .images img {
+		width: 350px;
+		top: 0;
+	}
+
+	#timetable {
+		padding-bottom: 5rem;
+	}
+
+	.timetable {
+		font-size: 6px;
+	}
+
+	#contact {
+		padding-top: 5rem;
+		padding-bottom: 8rem;
+	}
+
+	.contact-info {
+		display: none;
+	}
+
+	.container {
+  	width: calc(100% - 1rem);
+	}
+
+	input[type=text], select, textarea, option {
+		margin-bottom: 5px;
+	}
+
+	#contact {
+		padding-bottom: 5rem;
+	}
+
+	footer {
+		margin-left: 25px;
+		margin-bottom: 25px;
+		padding: 0;
+	}
+}
+
+/* Media Query Max 1023px and Min 768px */
+@media (min-width: 768px) and (max-width: 1023px) {
+	main .grid1 h1 {
+  	font-weight: 10;
+  	font-size: 5rem;
+	}
+
+	main .grid1 .up {
+		padding-top: 300px;
+		margin-left: 100px;
+	}
+
+	main .grid1 .mid {
+		margin-left: 300px;
+	}
+
+	main .grid1 .bott {
+		margin-left: 200px;
+	}
+
+	main .grid2 {
+		width: 40%;
+		font-size: 1.2rem;
+		text-align: justify;
+		margin-top: 25px;
+		margin-left: 400px;
+	}
+
+	#aboutus {
+		margin-top: 14rem;
+		padding-top: 14rem;
+		padding-bottom: 8rem;
+	}
+
+	section .aboutus {
+		display: block;
+		margin-top: 10px;
+	}
+
+	section .aboutus .about {
+		font-size: 2rem;
+		width: calc(100% - 1rem);
+	}
+
+	section .aboutus .images img {
+		width: 600px;
+		top: -80px;
+		left: 200px;
+	}
+
+	#timetable {
+		margin-top: 5rem;
+		padding-top: 5rem;
+		padding-bottom: 0;
+	}
+
+	.timetable {
+		font-size: 20px;
+	}
+
+	#contact {
+		padding-top: 14rem;
+		padding-bottom: 14rem;
+	}
+
+	.contact-info {
+		width: 60%;
+	}
+
+	.contact-info img {
+		width: 500px;
+		z-index: 1;
+		left: 0px;
+	}
+
+	.container {
+	  	font-size: 1.2rem;
+	}
+
+	input[type=text], select, textarea, option {
+	  	font-size: 1.2rem;
+	}
+
+	input[type=submit] {
+		font-size: 1.2rem;
+	  	padding: 18px 36px;
+	} 
+
+	 footer {
+		font-size: 1.5rem;
+	}
+}

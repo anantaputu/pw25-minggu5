@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
+	min-height: 100vh;
+}
+
+/* Navbar Section */
+
+nav {
+  	position: fixed;
+  	z-index: 999;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	background-color: #000000;
+  	transition: all 1s ease;
+}
+
+nav.scroll {
+  	backdrop-filter: blur(20px);
+  	background-color: transparent;
+  	border-bottom: 0.5px solid #ffffff;
+}
+
+.navbar {
+	display: flex;
+	padding: 1rem 3rem 1rem 3rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar .logo {
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.navbar .navigation ul {
+	list-style: none;
+	display: flex;
+}
+
+.navbar .navigation ul li {
+	margin: 0 30px;
+}
+
+.navbar .mobile-navbar {
+	position: absolute;
+	display: none;
+	width: 150px;
+	height: 230px;
+	right: 1.1rem;
+	top: 4.5rem;
+	border-radius: 12px;
+	border: 1px solid #ffffff;
+	background-color: black;
+}
+
+.navbar .mobile-navbar ul {
+	list-style: none;
+}
+
+.navbar .mobile-navbar ul li {
+	margin: 18px 15px;
+}
+
+.nav-button .logout {
+	font-weight: 500;
+	padding: 5px 20px;
+	background-color: white;
+	color: black;
+	border-radius: 50px;
+	text-align: center;
+	transition: all 0.5s ease;
+	pointer-events: active;
+}
+
+.nav-button .logout:hover {
+	background-color: black;
+	color: white;
+	border: 1px solid #ffffff;
+	padding: 5px 19px;
+}
+
+.nav-button .gallery {
+	font-weight: 500;
+	padding: 5px 20px;
+	background-color: white;
+	color: black;
+	border-radius: 50px;
+	text-align: center;
+	transition: all 0.5s ease;
+	pointer-events: active;
+}
+
+.nav-button .gallery:hover {
+	background-color: black;
+	color: white;
+	border: 1px solid #ffffff;
+	padding: 5px 19px;
+}
+
+.hamburger-menu {
+	display: none;
+}
+
+/* End Navbar Section */
+
+/* Media Query 360px */
+@media screen and (max-width: 360px) {
+  	.navbar {
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.navbar .navigation ul {
+		display: none;
+	}
+
+	.hamburger-menu {
+		display: block;
+	}
+
+	.navbar .mobile-navbar.active {
+		display: block;
+	}
+
+	.nav-button .logout {
+		display: none;
+	}
+}
+
+/* Media Query Max 767px and Min 361px */
+@media screen and (min-width: 361px) and (max-width: 767px) {
+  	.navbar {
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.navbar .navigation ul {
+		display: none;
+	}
+
+	.hamburger-menu {
+		display: block;
+	}
+
+	.navbar .mobile-navbar.active {
+		display: block;
+	}
+
+	.nav-button .logout {
+		display: none;
+	}
+
+	.gallery {
+		margin-right: -50px;
+	}
+}
+
+/* Media Query Max 1023px and Min 768px */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.navbar {
+		padding: 1rem 1rem 1rem 1rem;
+	}
+
+	.navbar .navigation ul {
+		display: none;
+	}
+
+	.hamburger-menu {
+		display: block;
+	}
+
+	.navbar .mobile-navbar.active {
+		display: block;
+	}
+
+	.nav-button .logout {
+		display: none;
+	}
+}
